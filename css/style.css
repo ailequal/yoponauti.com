@@ -9,6 +9,7 @@ body {
 	min-width: 320px;
 	font-family: sans-serif;
 	font-size: 16px;
+	background-color: rgb(249, 249, 249);
 }
 
 ul {
@@ -83,8 +84,9 @@ a {
 	margin: 0 auto 40px auto;
 }
 
-.jumbotron img {
+.jumbotron iframe {
 	width: 100%;
+	/* max-height: 720; */
 }
 
 .box {
@@ -97,7 +99,6 @@ a {
 
 .box .item {
 	position: relative;
-	background-color: red;
 }
 
 .box .item h2 {
