@@ -1,22 +1,21 @@
-$(document).ready(function () {
-	const counters = document.querySelectorAll('.counter');
-	const speed = 500;
+// counter
+const counters = document.querySelectorAll('.counter');
+const speed = 500;
 
-	counters.forEach(counter => {
-		const updateCount = () => {
-			const target = +counter.getAttribute('data-target');
-			const count = +counter.innerText;
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
 
-			const inc = target / speed;
+		const inc = target / speed;
 
-			if (count < target) {
-				counter.innerText = Math.ceil(count + inc);
-				setTimeout(updateCount, 1);
-			} else {
-				count.innerText = target;
-			}
+		if (count < target) {
+			counter.innerText = Math.ceil(count + inc);
+			setTimeout(updateCount, 1);
+		} else {
+			count.innerText = target;
 		}
+	}
 
-		updateCount();
-	})
-});
+	updateCount();
+})
