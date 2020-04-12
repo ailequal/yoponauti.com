@@ -9,7 +9,7 @@ body {
   min-width: 320px;
   font-family: sans-serif;
   font-size: 16px;
-  background-color: rgb(249, 249, 249);
+	background-color: rgb(249, 249, 249);
 }
 
 ul {
@@ -135,7 +135,8 @@ a {
   width: 100%;
   min-width: 320px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.4);
+	backdrop-filter: blur(8px);
   overflow-y: scroll;
   z-index: 1;
 }
@@ -146,18 +147,23 @@ a {
   width: 90%;
   max-width: 1200px;
   margin: 40px auto 0 auto;
-  border: 1px solid #888;
-  background-color: rgb(249, 249, 249);
+	border: 2px solid #888;
+	border-radius: 10px;
+	/* background-color: rgb(249, 249, 249); */
+	background-color: rgba(249, 249, 249, 0.8);
+	/* background-color: rgba(242, 249, 102, 0.74); */
 }
 
 .modal .modal-content .img {
   flex: 2;
-  align-self: center;
+	align-self: center;
+	padding: 20px;
 }
 
 .modal .modal-content .img img {
   display: block;
-  width: 100%;
+	width: 100%;
+	border-radius: 10px;
 }
 
 .modal .modal-content .wrapper {

@@ -42,10 +42,10 @@
 		</div>
 	</header>
 	<main>
-		<div class="preview container">
+		<!-- <div class="preview container">
 			<h1>Total views: </h1>
 			<div class="counter" data-target="1000"></div>
-		</div>
+		</div> -->
 		<div class="jumbotron container">
 			<iframe height="315" src="https://www.youtube.com/embed/i56R7gu9Gjg" frameborder="0"
 				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -102,9 +102,11 @@
 						<div class="wrapper clearfix">
 							<h2>Titolo foto A</h2>
 							<h3>Progetto A</h3>
-							<p>Descrizione: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis obcaecati harum modi exercitationem cumque ea magnam nesciunt, quae, facere esse deserunt placeat sequi, vel natus dicta similique? Aliquid, aperiam necessitatibus?</p>
+							<p>Descrizione: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis obcaecati harum modi
+								exercitationem cumque ea magnam nesciunt, quae, facere esse deserunt placeat sequi, vel natus dicta
+								similique? Aliquid, aperiam necessitatibus?</p>
 							<a href="#">Link</a>
-							<i class="close fas fa-window-close"></i>
+							<i class="close fas fa-times"></i>
 						</div>
 					</div>
 				</div>
@@ -119,9 +121,11 @@
 						<div class="wrapper clearfix">
 							<h2>Titolo foto B</h2>
 							<h3>Progetto B</h3>
-							<p>Descrizione: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis obcaecati harum modi exercitationem cumque ea magnam nesciunt, quae, facere esse deserunt placeat sequi, vel natus dicta similique? Aliquid, aperiam necessitatibus?</p>
+							<p>Descrizione: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis obcaecati harum modi
+								exercitationem cumque ea magnam nesciunt, quae, facere esse deserunt placeat sequi, vel natus dicta
+								similique? Aliquid, aperiam necessitatibus?</p>
 							<a href="#">Link</a>
-							<i class="close fas fa-window-close"></i>
+							<i class="close fas fa-times"></i>
 						</div>
 					</div>
 				</div>
@@ -136,9 +140,11 @@
 						<div class="wrapper clearfix">
 							<h2>Titolo foto C</h2>
 							<h3>Progetto C</h3>
-							<p>Descrizione: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis obcaecati harum modi exercitationem cumque ea magnam nesciunt, quae, facere esse deserunt placeat sequi, vel natus dicta similique? Aliquid, aperiam necessitatibus?</p>
+							<p>Descrizione: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis obcaecati harum modi
+								exercitationem cumque ea magnam nesciunt, quae, facere esse deserunt placeat sequi, vel natus dicta
+								similique? Aliquid, aperiam necessitatibus?</p>
 							<a href="#">Link</a>
-							<i class="close fas fa-window-close"></i>
+							<i class="close fas fa-times"></i>
 						</div>
 					</div>
 				</div>
@@ -160,10 +166,21 @@
 		</div>
 	</footer>
 	<script id="template" type="text/x-handlebars-template">
-		<div class="entry">
-			<h1>{{title}}</h1>
-			<div class="body">
-				{{body}}
+		<div class="item">
+			<img src="{{imgUrl}}" alt="{{imgName}}">
+			<div class="modal">
+				<div class="modal-content">
+					<div class="img">
+						<img src="{{imgUrl}}" alt="{{imgName}}">
+					</div>
+					<div class="wrapper clearfix">
+						<h2>{{title}}</h2>
+						<h3>{{project}}</h3>
+						<p>{{description}}</p>
+						<a href="{{link}}">Link</a>
+						<i class="close fas fa-times"></i>
+					</div>
+				</div>
 			</div>
 		</div>
 	</script>
