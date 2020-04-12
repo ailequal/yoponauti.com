@@ -99,6 +99,7 @@ a {
 
 .box .item {
   position: relative;
+  cursor: pointer;
 }
 
 .box .item img {
@@ -130,6 +131,7 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
+  cursor: auto;
   overflow-y: scroll;
   z-index: 1;
 }
@@ -144,20 +146,24 @@ a {
   background-color: rgba(249, 249, 249, 0.85);
 }
 
-.modal .modal-content .img {
+.modal .modal-content .data {
   position: relative;
   flex: 2;
   align-self: center;
   padding: 20px;
 }
 
-.modal .modal-content .img img {
+.modal .modal-content .data img {
   display: block;
   width: 100%;
   border-radius: 10px;
 }
 
-.modal .modal-content .img.video a::after {
+.modal .modal-content .data.image a {
+  cursor: auto;
+}
+
+.modal .modal-content .data.video a::after {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -207,6 +213,7 @@ a {
   padding: 5px;
   font-size: 32px;
   color: rgb(191, 191, 191);
+  cursor: pointer;
 }
 
 /* footer */
@@ -223,7 +230,7 @@ a {
 
 /* media query */
 @media screen and (max-width: 992px) {
-  .modal .modal-content .img {
+  .modal .modal-content .data {
     padding: 10px;
   }
 

@@ -1,15 +1,31 @@
 $(document).ready(function () {
 
-	// handlebars
+	// handlebars init
 	var source = document.getElementById("template").innerHTML;
 	var template = Handlebars.compile(source);
+
+	// video version
 	var context = {
-		imgUrl: "./img/01-break-the-noise/BREAK1.jpg",
-		imgName: "BREAK1.jpg",
+		// type: 'image',
+		type: 'video',
+		imageUrl: "./img/01-break-the-noise/BREAK1.jpg",
+		imageName: "BREAK1.jpg",
+		externalUrl: 'https://www.google.com',
+		// externalUrl: 'javascript:void(0)',
 		title: 'BREAK1',
-		project: 'BREAK THE NOISE',
 		description: 'This is the description',
-		link: '#'
+	};
+	var html = template(context);
+	$('.box').append(html);
+
+	// image version
+	var context = {
+		type: 'image',
+		imageUrl: "./img/01-break-the-noise/BREAK2.jpg",
+		imageName: "BREAK2.jpg",
+		externalUrl: 'javascript:void(0)',
+		title: 'BREAK2',
+		description: 'This is the description',
 	};
 	var html = template(context);
 	$('.box').append(html);
