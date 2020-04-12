@@ -136,7 +136,7 @@ a {
   min-width: 320px;
   height: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
-	backdrop-filter: blur(8px);
+	backdrop-filter: blur(2px);
   overflow-y: scroll;
   z-index: 1;
 }
@@ -149,9 +149,7 @@ a {
   margin: 40px auto 0 auto;
 	border: 2px solid #888;
 	border-radius: 10px;
-	/* background-color: rgb(249, 249, 249); */
-	background-color: rgba(249, 249, 249, 0.8);
-	/* background-color: rgba(242, 249, 102, 0.74); */
+	background-color: rgba(249, 249, 249, 1);
 }
 
 .modal .modal-content .img {
@@ -163,7 +161,7 @@ a {
 .modal .modal-content .img img {
   display: block;
 	width: 100%;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 .modal .modal-content .wrapper {
