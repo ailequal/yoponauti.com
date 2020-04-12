@@ -1,25 +1,4 @@
 $(document).ready(function () {
-	// counter
-	// const counters = document.querySelectorAll('.counter');
-	// const speed = 500;
-
-	// counters.forEach(counter => {
-	// 	const updateCount = () => {
-	// 		const target = +counter.getAttribute('data-target');
-	// 		const count = +counter.innerText;
-
-	// 		const inc = target / speed;
-
-	// 		if (count < target) {
-	// 			counter.innerText = Math.ceil(count + inc);
-	// 			setTimeout(updateCount, 1);
-	// 		} else {
-	// 			count.innerText = target;
-	// 		}
-	// 	}
-
-	// 	updateCount();
-	// })
 
 	// handlebars
 	var source = document.getElementById("template").innerHTML;
@@ -50,11 +29,12 @@ $(document).ready(function () {
 		modal.hide();
 	})
 
-	// var span = document.getElementsByClassName("close")[0];
 	// when the user clicks anywhere outside of the modal
-	window.onclick = function (event) {
-		if (event.target == document.getElementsByClassName('.modal')) {
-			document.getElementsByClassName('.modal').hide();
-		}
-	}
+	// window.onclick = function (event) {
+	// 	if (event.target == document.getElementsByClassName('.modal')) {
+	// 		document.getElementsByClassName('.modal').hide();
+	// 		var span = document.getElementsByClassName("close")[0];
+	// 	}
+	// }
+
 });

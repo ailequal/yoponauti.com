@@ -7,14 +7,15 @@
 
 body {
   min-width: 320px;
-  font-family: sans-serif;
-	background-color: rgb(249, 249, 249);
+  background-color: rgb(249, 249, 249);
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-	font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3 {
-	font-family: 'Roboto Slab', serif;
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
 }
 
 ul {
@@ -36,12 +37,6 @@ a {
   margin: auto;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* header */
 .nav-bar {
   display: flex;
@@ -53,11 +48,11 @@ a {
 .nav-bar li:focus,
 .nav-bar li:hover,
 .nav-bar li:active {
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
-.nav-bar .title a {
-  font-size: 30px;
+.nav-bar .logo a {
+  font-size: 38px;
   font-weight: 700;
 }
 
@@ -67,31 +62,23 @@ a {
 }
 
 .nav-bar-right li {
-  margin: 0 0 0 20px;
+  margin: 0 0 0 40px;
 }
 
 .nav-bar-right i {
-  font-size: 26px;
+  font-size: 32px;
+}
+
+.nav-bar-right .information a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 12px;
+  background-color: #000;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
 }
 
 /* main */
-/* preview */
-.preview {
-  margin: 0 auto 40px auto;
-  text-align: center;
-}
-
-.preview h1 {
-  display: inline-block;
-  font-size: 50px;
-}
-
-.preview .counter {
-  display: inline-block;
-  font-size: 50px;
-  color: red;
-}
-
 /* jumbotron */
 .jumbotron {
   margin: 0 auto 40px auto;
@@ -117,19 +104,19 @@ a {
 .box .item img {
   display: block;
   width: 100%;
-	height: 100%;
-	border-radius: 10px;
+  height: 100%;
+  border-radius: 10px;
 }
 
 .box .item.video::after {
   position: absolute;
   top: 10px;
   right: 10px;
-	content: "\f03d";
+  content: "\f03d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 20px;
-	color: rgba(191, 191, 191, 0.5);
+  color: rgba(191, 191, 191, 0.5);
 }
 
 /* modal */
@@ -141,8 +128,8 @@ a {
   width: 100%;
   min-width: 320px;
   height: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
-	backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
   overflow-y: scroll;
   z-index: 1;
 }
@@ -150,61 +137,56 @@ a {
 .modal .modal-content {
   display: flex;
   position: relative;
-  width: 90%;
   max-width: 1200px;
-	margin: 40px auto 0 auto;
-	border-radius: 10px;
-	background-color: rgba(249, 249, 249, 0.85);
+  width: 90%;
+  margin: 40px auto 0 auto;
+  border-radius: 10px;
+  background-color: rgba(249, 249, 249, 0.85);
 }
 
 .modal .modal-content .img {
-	position: relative;
+  position: relative;
   flex: 2;
-	align-self: center;
-	padding: 20px;
+  align-self: center;
+  padding: 20px;
 }
 
 .modal .modal-content .img img {
-	display: block;
-	width: 100%;
-	border-radius: 10px;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
 }
 
-.modal .modal-content .img a::after {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);	
-	font-family: "Font Awesome 5 Free";
-	content: "\f04b";
+.modal .modal-content .img.video a::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Font Awesome 5 Free";
+  content: "\f04b";
   font-weight: 900;
-	font-size: 100px;
-	color: rgba(249, 249, 249, 0.7);
+  font-size: 100px;
+  color: rgba(249, 249, 249, 0.7);
 }
 
 .modal .modal-content .wrapper {
   flex: 1;
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 }
 
 .modal .modal-content .wrapper h2 {
-	margin: 0 0 10px 0;
-	text-align: center;
-	font-size: 40px;
-	color: rgba(0, 0, 0, 0.7);
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
-/* .modal .modal-content .wrapper h3 {
-  margin: 0 0 20px 0;
-	font-size: 32px;
-	color: rgba(0, 0, 0, 0.8);
-} */
-
 .modal .modal-content .wrapper p {
-	font-size: 24px;
-	text-align: justify;
-	color: rgba(0, 0, 0, 0.7);
-	line-height: 1.4;
+  padding: 0 0 30px 0;
+  text-align: justify;
+  font-size: 24px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .modal .modal-content .wrapper a {
@@ -212,9 +194,9 @@ a {
   margin: 20px 0 0 0;
   border-radius: 10px;
   padding: 8px 15px;
-  font-size: 20px;
   background-color: rgb(191, 191, 191);
-  color: #fff;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
 }
 
 .modal .modal-content .wrapper .close {
@@ -240,12 +222,22 @@ a {
 }
 
 /* media query */
-@media screen and (max-width: 768px) {
-  .jumbotron.container {
-    width: 100%;
+@media screen and (max-width: 992px) {
+  .modal .modal-content .img {
+    padding: 10px;
   }
 
-  .box.container {
+  .modal .modal-content .wrapper {
+    padding: 10px 10px 10px 0;
+  }
+
+  .modal .modal-content .wrapper p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron.container {
     width: 100%;
   }
 
@@ -254,22 +246,17 @@ a {
     column-gap: 5px;
   }
 
-  .box .item.video::after {
-    font-size: 14px;
+  .box.container {
+    width: 100%;
   }
 
-  .modal .modal-content .wrapper {
-    padding: 10px;
+  .box .item.video::after {
+    font-size: 14px;
   }
 
   .modal .modal-content .wrapper h2 {
     margin: 0 0 10px 0;
     font-size: 32px;
-  }
-
-  .modal .modal-content .wrapper h3 {
-    margin: 0 0 20px 0;
-    font-size: 24px;
   }
 
   .modal .modal-content .wrapper p {
@@ -281,6 +268,10 @@ a {
   .nav-bar {
     display: block;
     margin: 30px auto 40px auto;
+  }
+
+  .nav-bar-left .logo {
+    text-align: center;
   }
 
   .nav-bar-right ul {
