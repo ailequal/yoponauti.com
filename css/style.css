@@ -78,7 +78,7 @@ a {
   color: rgb(255, 255, 255);
 }
 
-/* main */
+/* index main */
 /* jumbotron */
 .jumbotron {
   margin: 0 auto 40px auto;
@@ -140,6 +140,17 @@ a {
   cursor: auto;
   overflow-y: scroll;
   z-index: 1;
+  animation-name: open;
+  animation-duration: 0.5s;
+}
+
+@keyframes open {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      width: 1;
+  }
 }
 
 .modal .modal-content {
@@ -227,6 +238,9 @@ a {
 .modal .modal-content .wrapper .close:active {
   color: rgb(0, 0, 0);
 }
+
+/* about main */
+/* empty */
 
 /* footer */
 .info ul {
