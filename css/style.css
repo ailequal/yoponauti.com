@@ -137,6 +137,7 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   cursor: auto;
   overflow-y: scroll;
   z-index: 1;
@@ -177,7 +178,7 @@ a {
 }
 
 .modal .modal-content .data.image a {
-  cursor: auto;
+  cursor: default;
 }
 
 .modal .modal-content .data.video a::after {
@@ -239,7 +240,16 @@ a {
 }
 
 /* about main */
-/* empty */
+.us {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(230, 230, 230, 0.85);
+}
+
+.us p {
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 24px;
+}
 
 /* footer */
 .info ul {
