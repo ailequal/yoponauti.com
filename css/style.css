@@ -136,8 +136,8 @@ a {
 
 .box .item.video::after {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 7px;
+  right: 7px;
   content: "\f03d";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -440,6 +440,8 @@ a {
   }
 
   .box .item.video::after {
+    top: 5px;
+    right: 5px;
     font-size: 12px;
   }
 
@@ -450,5 +452,13 @@ a {
 
   .info li {
     margin: 0 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .box .item.video::after {
+    top: 5px;
+    right: 5px;
+    font-size: 8px;
   }
 }
