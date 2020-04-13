@@ -1,9 +1,5 @@
 $(document).ready(function () {
 
-	// importing data
-	// import { ciao } from './test.js';
-	// ciao();
-
 	// box content
 	var items = [
 		// row 1 - oshena
@@ -156,40 +152,7 @@ $(document).ready(function () {
 				'3D modeling: Andrea Andreani'
 			]
 		],
-		// row 5 - irandagi
-		[
-			[
-				'image',
-				'./img/irandagi/irandagi1.jpg',
-				'irandagi1.jpg',
-				'javascript:void(0)',
-				'',
-				'Animali',
-				'Progetto audiovisivo composto da 7 brani associati a 7 video, anno 2019.',
-				'Credit: I randagi, aka Francesco Travaglini'
-			],
-			[
-				'video',
-				'./img/irandagi/irandagi2.jpg',
-				'irandagi2.jpg',
-				'https://www.youtube.com/channel/UC40bE3yrfYoNZ57I8ZmEK4w/videos',
-				'_blank',
-				'Animali',
-				'Progetto audiovisivo surreale composto da 7 brani associati a 7 video, anno 2019.',
-				'Credit: I randagi, aka Francesco Travaglini'
-			],
-			[
-				'image',
-				'./img/irandagi/irandagi3.jpg',
-				'irandagi3.jpg',
-				'javascript:void(0)',
-				'',
-				'Animali',
-				'Progetto audiovisivo composto da 7 brani associati a 7 video, anno 2019.',
-				'Credit: I randagi, aka Francesco Travaglini'
-			]
-		],
-		// row 6 - sarto della materia
+		// row 5 - sarto della materia
 		[
 			[
 				'image',
@@ -222,7 +185,7 @@ $(document).ready(function () {
 				'Credit: Alberto Magnani'
 			]
 		],
-		// row 7 - frashoot
+		// row 6 - frashoot
 		[
 			[
 				'image',
@@ -258,40 +221,7 @@ $(document).ready(function () {
 				'Modello: Armel Ngungunanga'
 			]
 		],
-		// row 8 - antica lavorazione
-		[
-			[
-				'image',
-				'./img/antica-lavorazione/ceramica1.jpg',
-				'ceramica1.jpg',
-				'javascript:void(0)',
-				'',
-				'L\'antica lavorazione',
-				'Shooting fotografico realizzato per Fos Ceramiche, società specializzata nella lavorazione dell\'argilla.',
-				'Credit: Alberto Magnani'
-			],
-			[
-				'image',
-				'./img/antica-lavorazione/ceramica2.jpg',
-				'ceramica2.jpg',
-				'javascript:void(0)',
-				'',
-				'L\'antica lavorazione',
-				'Shooting fotografico realizzato per Fos Ceramiche, società specializzata nella lavorazione dell\'argilla.',
-				'Credit: Alberto Magnani'
-			],
-			[
-				'image',
-				'./img/antica-lavorazione/ceramica3.jpg',
-				'ceramica3.jpg',
-				'javascript:void(0)',
-				'',
-				'L\'antica lavorazione',
-				'Shooting fotografico realizzato per Fos Ceramiche, società specializzata nella lavorazione dell\'argilla.',
-				'Credit: Alberto Magnani'
-			]
-		],
-		// row 9 - nicoletta aither design shooting
+		// row 7 - nicoletta aither design shooting
 		[
 			[
 				'image',
@@ -324,7 +254,7 @@ $(document).ready(function () {
 				'Credit: Alberto Magnani'
 			]
 		],
-		// row 10 - flaming night
+		// row 8 - flaming night
 		[
 			[
 				'image',
@@ -357,22 +287,45 @@ $(document).ready(function () {
 				'Credit: Francesco Travaglini'
 			]
 		],
-		// row 11 - ultima spiaggia
+		// row 9 - antica lavorazione
+		[
+			[
+				'image',
+				'./img/antica-lavorazione/ceramica1.jpg',
+				'ceramica1.jpg',
+				'javascript:void(0)',
+				'',
+				'L\'antica lavorazione',
+				'Shooting fotografico realizzato per Fos Ceramiche, società specializzata nella lavorazione dell\'argilla.',
+				'Credit: Alberto Magnani'
+			],
+			[
+				'image',
+				'./img/antica-lavorazione/ceramica2.jpg',
+				'ceramica2.jpg',
+				'javascript:void(0)',
+				'',
+				'L\'antica lavorazione',
+				'Shooting fotografico realizzato per Fos Ceramiche, società specializzata nella lavorazione dell\'argilla.',
+				'Credit: Alberto Magnani'
+			],
+			[
+				'image',
+				'./img/antica-lavorazione/ceramica3.jpg',
+				'ceramica3.jpg',
+				'javascript:void(0)',
+				'',
+				'L\'antica lavorazione',
+				'Shooting fotografico realizzato per Fos Ceramiche, società specializzata nella lavorazione dell\'argilla.',
+				'Credit: Alberto Magnani'
+			]
+		],
+		// row 10 - ultima spiaggia
 		[
 			[
 				'image',
 				'./img/ultima-spiaggia/Ultimaspiaggia-1.jpg',
 				'Ultimaspiaggia-1.jpg',
-				'javascript:void(0)',
-				'',
-				'Ultima Spiaggia',
-				'Selezione di scatti del photobook Ultima Spiaggia, progetto di ricerca sui luoghi marginali sotto la guida di Massimo Sordi e Guido Guidi. Anno 2016.',
-				'Credit: Francesco Travaglini'
-			],
-			[
-				'image',
-				'./img/ultima-spiaggia/Ultimaspiaggia-3.jpg',
-				'Ultimaspiaggia-3.jpg',
 				'javascript:void(0)',
 				'',
 				'Ultima Spiaggia',
@@ -388,9 +341,52 @@ $(document).ready(function () {
 				'Ultima Spiaggia',
 				'Selezione di scatti del photobook Ultima Spiaggia, progetto di ricerca sui luoghi marginali sotto la guida di Massimo Sordi e Guido Guidi. Anno 2016.',
 				'Credit: Francesco Travaglini'
+			],
+			[
+				'image',
+				'./img/ultima-spiaggia/Ultimaspiaggia-3.jpg',
+				'Ultimaspiaggia-3.jpg',
+				'javascript:void(0)',
+				'',
+				'Ultima Spiaggia',
+				'Selezione di scatti del photobook Ultima Spiaggia, progetto di ricerca sui luoghi marginali sotto la guida di Massimo Sordi e Guido Guidi. Anno 2016.',
+				'Credit: Francesco Travaglini'
 			]
 		],
-		// row 12 - flaming 2016
+		// row 11 - ultima spiaggia
+		[
+			[
+				'image',
+				'./img/irandagi/irandagi1.jpg',
+				'irandagi1.jpg',
+				'javascript:void(0)',
+				'',
+				'Animali',
+				'Progetto audiovisivo composto da 7 brani associati a 7 video, anno 2019.',
+				'Credit: I randagi, aka Francesco Travaglini'
+			],
+			[
+				'video',
+				'./img/irandagi/irandagi2.jpg',
+				'irandagi2.jpg',
+				'https://www.youtube.com/channel/UC40bE3yrfYoNZ57I8ZmEK4w/videos',
+				'_blank',
+				'Animali',
+				'Progetto audiovisivo composto da 7 brani associati a 7 video, anno 2019.',
+				'Credit: I randagi, aka Francesco Travaglini'
+			],
+			[
+				'image',
+				'./img/irandagi/irandagi3.jpg',
+				'irandagi3.jpg',
+				'javascript:void(0)',
+				'',
+				'Animali',
+				'Progetto audiovisivo composto da 7 brani associati a 7 video, anno 2019.',
+				'Credit: I randagi, aka Francesco Travaglini'
+			]
+		],
+		// row 12 - ultima spiaggia
 		[
 			[
 				'image',
@@ -424,86 +420,5 @@ $(document).ready(function () {
 			]
 		],
 	]
-
-	// adding box content
-	var template = handlebarsInit('#template');
-	// cycle the main items array
-	for (var i = 0; i < items.length; i++) {
-		// cycle every single array
-		for (var j = 0; j < items[i].length; j++) {
-			// handlebars
-			var context = {
-				type: items[i][j][0],
-				imageUrl: items[i][j][1],
-				imageName: items[i][j][2],
-				externalUrl: items[i][j][3],
-				target: items[i][j][4],
-				title: items[i][j][5],
-				description1: items[i][j][6],
-				description2: items[i][j][7],
-				description3: items[i][j][8],
-				description4: items[i][j][9],
-			};
-			var html = template(context);
-			$('.box').append(html);
-		}
-	}
-
-	// video version
-	// var template = handlebarsInit('#template');
-	// var context = {
-	// 	type: 'video',
-	// 	imageUrl: "./img/01-break-the-noise/BREAK1.jpg",
-	// 	imageName: "BREAK1.jpg",
-	// 	externalUrl: 'https://www.youtube.com',
-	// 	title: 'BREAK1',
-	// 	description: 'This is the description',
-	// };
-	// var html = template(context);
-	// $('.box').append(html);
-
-	// image version
-	// var template = handlebarsInit('#template');
-	// var context = {
-	// 	type: 'image',
-	// 	imageUrl: "./img/01-break-the-noise/BREAK2.jpg",
-	// 	imageName: "BREAK2.jpg",
-	// 	externalUrl: 'javascript:void(0)',
-	// 	title: 'BREAK2',
-	// 	description: 'This is the description',
-	// };
-	// var html = template(context);
-	// $('.box').append(html);
-
-	// modal
-	// when user click on an image
-	$('.item img').on('click', function () {
-		// show that specific modal window
-		var modal = $(this).siblings('.modal');
-		modal.show();
-	});
-
-	// when user click on close
-	$('.close').on('click', function () {
-		// close that specific modal window
-		var modal = $(this).closest('.modal');
-		modal.hide();
-	})
-
-	// when the user clicks anywhere outside of the modal
-	// window.onclick = function (event) {
-	// 	if (event.target == document.getElementsByClassName('.modal')) {
-	// 		document.getElementsByClassName('.modal').hide();
-	// 		var span = document.getElementsByClassName("close")[0];
-	// 	}
-	// }
-
-	// functions
-	// handlebars init
-	function handlebarsInit(template) {
-		var source = $('#template').html();
-		var template = Handlebars.compile(source);
-		return template;
-	}
 
 });
