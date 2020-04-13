@@ -46,15 +46,26 @@ a {
 }
 
 .nav-bar .logo a {
-  font-size: 38px;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
 }
 
-.nav-bar .logo:focus a,
-.nav-bar .logo:hover a,
-.nav-bar .logo:active a {
+.nav-bar .logo span {
+  display: inline-block;
+  margin: 0 0 0 20px;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-bar .logo :focus span,
+.nav-bar .logo :hover span,
+.nav-bar .logo :active span {
   color: rgba(0, 0, 0, 1);
+}
+
+.nav-bar .logo img {
+  width: 100px;
+  border-radius: 50%;
 }
 
 .nav-bar-right ul {
@@ -68,7 +79,7 @@ a {
 
 .nav-bar-right i {
   font-size: 32px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .nav-bar i:focus,
@@ -81,7 +92,7 @@ a {
   display: inline-block;
   border-radius: 5px;
   padding: 5px 12px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   font-size: 18px;
   color: rgb(255, 255, 255);
 }
@@ -287,6 +298,26 @@ a {
   text-align: justify;
 }
 
+.users {
+  display: flex;
+}
+
+.user.about-box {
+  display: block;
+}
+
+.user.about-box:nth-child(2) {
+  margin: 0 20px 20px 20px;
+}
+
+.user.about-box .about-avatar {
+  width: 100%;
+}
+
+.user.about-box .about-info {
+  width: 100%;
+}
+
 /* footer */
 .info ul {
   display: flex;
@@ -297,7 +328,7 @@ a {
 
 .info a {
   font-size: 20px;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .info li:focus a,
@@ -327,6 +358,14 @@ a {
   .about-info p {
     font-size: 20px;
     line-height: 1.4;
+  }
+
+  .users {
+    display: block;
+  }
+
+  .user.about-box:nth-child(2) {
+    margin: 0 0 20px 0;
   }
 }
 
@@ -386,10 +425,6 @@ a {
   .nav-bar {
     display: block;
     margin: 30px auto 40px auto;
-  }
-
-  .nav-bar-left .logo {
-    text-align: center;
   }
 
   .nav-bar-right ul {
