@@ -292,10 +292,35 @@ a {
   padding: 20px;
 }
 
+.about-info h3 {
+  margin: 0 0 10px 0;
+  font-size: 30px;
+}
+
 .about-info p {
   font-size: 24px;
   line-height: 1.4;
   text-align: justify;
+}
+
+.about-info ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-info li {
+  margin: 0 0 10px 0;
+  font-size: 28px;
+}
+
+.about-info li:hover a,
+.about-info li:hover i {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.about-info i {
+  margin: 0 10px 0 0;
 }
 
 .users {
@@ -304,6 +329,8 @@ a {
 
 .user.about-box {
   display: block;
+  position: relative;
+  width: calc(100% / 3);
 }
 
 .user.about-box:nth-child(2) {
@@ -316,6 +343,32 @@ a {
 
 .user.about-box .about-info {
   width: 100%;
+  padding: 20px 0 0 0;
+}
+
+.user.about-box .about-info p {
+  width: 100%;
+}
+
+.user.about-box .about-info div {
+  height: 80px;
+}
+
+.user.about-box .about-info div:hover a {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.user.about-box .about-info a {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  width: 160px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 /* footer */
@@ -364,8 +417,17 @@ a {
     display: block;
   }
 
+  .user.about-box {
+    width: 100%;
+  }
+
   .user.about-box:nth-child(2) {
     margin: 0 0 20px 0;
+  }
+
+  .user.about-box .about-info {
+    width: 100%;
+    padding: 20px;
   }
 }
 
@@ -453,6 +515,10 @@ a {
   .info li {
     margin: 0 0 10px 0;
   }
+
+  .about-info li {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -460,5 +526,15 @@ a {
     top: 5px;
     right: 5px;
     font-size: 8px;
+  }
+
+  .about-info li {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 370px) {
+    .about-info li {
+      font-size: 18px;
+    }
   }
 }
